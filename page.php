@@ -1,9 +1,20 @@
 <?php get_header(); ?>
 
-<header class="caption">
-	<h1><?php the_title(); ?></h1>
-	<p><?php the_excerpt(); ?></p>
-</header>
+
+<?php if (is_front_page()): ?>
+
+	<header class="caption">
+		<h1><?php bloginfo('name'); ?></h1>
+		<p><?php bloginfo('description'); ?></p>
+	</header>
+
+<?php else: ?>
+
+	<header class="caption">
+		<h1><?php the_title(); ?></h1>
+	</header>
+
+<?php endif; ?>
 
 
 <?php 
@@ -12,9 +23,13 @@
 	endwhile;
 ?>
 
-<footer class="badge">
-	<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-</footer>
+<?php if (is_front_page()): ?>
+
+	<footer class="badge">
+		<a href="https://github.com/solidcreature/shower_wp">Fork me on GitHub</a>
+	</footer>
+
+<?php endif; ?>
 
 <div class="progress"></div>
 
