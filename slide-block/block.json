@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "wp-shower/slide",
+	"title": "Слайд презентации",
+	"category": "layout",
+	"icon": "analytics",
+	"textdomain": "wp-shower",
+	"example": {},
+	"editorScript": "file:./block.js",
+	"editorStyle": "file:./block.css",
+    "style": "file:./block.css",
+	"styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "first-slide", "label": "First Slide" },
+        { "name": "white", "label": "White color" },
+        { "name": "inverted", "label": "Inverted" },
+		{ "name": "telepromter", "label": "Telepromter" }
+    ]
+}

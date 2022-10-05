@@ -1,0 +1,90 @@
+/*
+ * Theme Name: WP Shower
+ * Description: 
+ * Theme URI:   
+ * Author:      
+ * Author URI:  
+*/
+
+html.shower-presentation-theme {
+	margin-top: 0 !important;
+}
+
+#wpadminbar {
+	opacity: 0;
+}
+
+#wpadminbar:hover {
+	opacity: 1;
+}
+
+.wp-block-quote  cite {
+	margin: -1em 0 1em;
+	font-style: italic;
+	font-weight: bold;
+	display: block;
+}
+
+
+.slide table {
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.slide  .wp-block-table {
+  margin-left: calc(var(--slide-side) * -1);
+  margin-bottom: 1em;
+  width: calc( 100% + var(--slide-side) * 2 );
+  border-collapse: collapse;
+  border-spacing: 0;	
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+}	
+
+.cover figcaption {
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	margin: 0;
+	font-size: 12px;
+	opacity: 0.7;
+	transform-origin: 0 100%;
+	transform: translateX(100%) rotate(-90deg);
+}
+
+
+
+.is-style-first-slide.slide h2 {
+	font-size: 70px;
+	color: #fff;
+	text-align: center;	
+	margin: 40px 0 0;
+}
+
+.is-style-first-slide.slide p, .is-style-first-slide.slide a { 
+	color: #fff;
+	text-align: center;	
+}
+
+.is-style-white.slide h2, .is-style-white.slide p, .is-style-white.slide a  {
+	color: #fff;	
+}
+
+
+.is-style-telepromter.slide {
+	background-color: #000;
+	color: #fff;
+	transform: scale(-1,1);
+} 
+
+.is-style-telepromter.slide h2, .is-style-telepromter.slide p, .is-style-telepromter.slide a, .is-style-telepromter.slide table, .is-style-telepromter.slide li  {
+	color: #fff;
+} 
+
+
